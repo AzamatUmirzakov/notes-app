@@ -1,0 +1,76 @@
+.folder {
+  /*box-sizing: border-box;*/
+}
+
+.open .fold {
+}
+
+.open > .cover > svg {
+  transform: rotate(90deg);
+}
+
+.cover {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+  color: #999999;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Segoe UI";
+}
+
+.cover svg {
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  transition: all 0.3s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.cover:hover {
+  color: #afd1d1;
+}
+
+.fold {
+  color: #999999;
+  margin-left: 6px;
+  border-left: 1px solid #999999;
+  padding-left: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: margin 0.2s ease-in-out;
+  list-style: none;
+}
+
+.fold li {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.fold a {
+  color: #999999;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.fold a:hover, .fold a:focus {
+  color: #afd1d1;
+}
+
+.fold a:first-of-type {
+  padding-top: 0;
+}
+
+.fold a:last-of-type {
+  padding-bottom: 0;
+}
+
+button {
+  background: transparent;
+  outline: none;
+  border: none;
+}

@@ -1,0 +1,9 @@
+.editable {
+
+}
+
+.editable:focus {
+  border: none;
+  outline: none;
+  background-color: #212121;
+}

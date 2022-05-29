@@ -1,0 +1,65 @@
+.list {
+  scrollbar-color: #333 #262626;
+  padding: 10px;
+  height: 100%;
+  overflow: auto;
+}
+
+.list::-webkit-scrollbar {
+  width: 5px; /* Mostly for vertical scrollbars */
+  height: 5px; /* Mostly for horizontal scrollbars */
+}
+
+.list::-webkit-scrollbar-thumb { /* Foreground */
+  background: #333;
+  border-radius: 5px;
+}
+
+.list::-webkit-scrollbar-thumb:hover { /* Foreground */
+  background: #3b3b3b;
+}
+
+.list::-webkit-scrollbar-track { /* Background */
+  background: #262626;
+}
+
+.list h1 {
+  text-transform: uppercase;
+  font-family: "Segoe UI";
+  margin-top: 10px;
+  color: #999999;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.content {
+  color: #999999;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: margin 0.2s ease-in-out;
+  list-style: none;
+}
+
+.content li {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.content a {
+  color: #999999;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.content a:hover, .fold a:focus {
+  color: #afd1d1;
+}
+
+.content a:first-of-type {
+  padding-top: 0;
+}
+
+.content a:last-of-type {
+  padding-bottom: 0;
+}

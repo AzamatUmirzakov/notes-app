@@ -1,0 +1,51 @@
+.header {
+  width: 90%;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  column-gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header input {
+  color: #d1d1d1;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  padding: 4px;
+  border-radius: 5px;
+  cursor:pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  background-color: #2e2e2e;
+}
+
+.icon:hover svg path {
+  stroke: #d1d1d1;
+}
+
+.icon:last-of-type {
+  margin-right: 0;
+}
+
+.icon svg {
+  width: 26px;
+  height: 26px;
+}
+

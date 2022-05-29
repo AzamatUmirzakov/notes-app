@@ -1,0 +1,46 @@
+.controls {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.icon {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 8px;
+  border-radius: 5px;
+  width: 18px;
+  height: 18px;
+  cursor:pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  background-color: #2e2e2e;
+}
+
+.icon:hover svg path {
+  stroke: #d1d1d1;
+}
+
+.icon:hover svg path:not([fill="none"]) {
+  fill: #d1d1d1;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.icon:not(:last-of-type) {
+  margin-right: 10px;
+}
+
+.icon svg path {
+  transition: all 0.3s ease-in-out;
+}
